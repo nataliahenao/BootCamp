@@ -1,0 +1,48 @@
+*{box-sizing: border-box;}
+body {
+  /*max-width: 1920px;
+  min-width: 320px;*/
+  width: 100%;
+  display: center;
+}
+
+header {
+  font-family: arial;
+  width: 100%;
+}
+
+.container1 {
+  width: 100%x;
+  margin: 8px 10px 8px 10px;
+}
+
+.td1 {
+  display: block;
+}
+
+.tabla1 {
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.tabla2 {
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.dropdownfecha {
+  display: inline-block;
+  margin-left: 800px;
+}
+
+.transacción {
+  display: inline-block;
+}
+
+.concepto {
+
+}
+
+h3 {
+  margin-top: -10px;
+}

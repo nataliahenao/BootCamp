@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <title>Párrafos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">El Juego</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Beneficios</a></li>
+                  </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Ir a otro sitio</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>El planeta está en riesgo</h1>
+      <p>Sálvalo jugando este <strong>increible</strong> juego en línea</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Empezar ahora</a></p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3><strong>Multijugador</strong></h3>
+        <p>Si, juégalo con tus mejores amigos sin importar en dónde se encuentren. Comunícate en tiempo real con ellos y salva el mundo. Sí, salva el mundo!</p>
+        <p>
+          <button type="button" class="btn btn-success">Invitar Amigos</button>
+          <button type="button" class="btn btn-default">Jugar solo</button>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h3><strong>Divertido</strong></h3>
+        <p>Si, entre más juegues, más divertido será el juego. Juega por horas, días o meses. Recuerda que lo importante no es ganar, es participar, aunque ganar es más divertido.</p>
+        <p>
+          <button type="button" class="btn btn-success">Sí, quiero jugar</button>
+          <button type="button" class="btn btn-default">No, ahora no puedo</button>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h3><strong>Compra</strong></h3>
+        <p>Si,  queremos que juegues. Pero también queremos que compres. Las compras son muy importantes para salvar el mundo. Esperamos que compres.</p>
+        <p>
+          <button type="button" class="btn btn-success">Quiero comprar</button>
+          <button type="button" class="btn btn-default">No tengo plata</button>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="alert alert-info" role="alert"><strong>¡Atención!</strong> El juego es muy popular. Regístrate antes que sea tarde!</div>
+  </div>
+  <div class="container">
+    <h3><strong>Puntaje</strong></h3>
+    <table class="table table-condensed">
+      <tr>
+          <th>Nombre</th>
+          <th>Puntos</th>
+      </tr>
+      <tr>
+          <td>Pedro</td>
+          <td>8,300</td>
+      </tr>
+      <tr>
+          <td>Pablo</td>
+          <td>4,100</td>
+      </tr>
+    </table>
+  </div>
+  <div class="container"></div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="alert alert-danger" role="alert"><strong>¡Lo sentimos!</strong> en este momento no es posible resgistrarse</div>
+        <h3><strong>Registro</strong></h3>
+       <div class="form-group">
+          <label for="usr">Email address</label>
+          <input type="text" class="form-control" id="usr" placeholder="Enter email">
+       </div>
+        <div class="form-group">
+          <label for="pwd">Password</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Password">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Entiendo las condiciones y eso</label>
+        </div>
+        <button type="button" class="btn btn-default">Registrarse</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h3><strong>Registrate desde la consola</strong></h3>
+    <pre>$ gem install eljuego
+$ eljuego signup
+$ username
+$ password
+$ eljuego play</pre>
+  </div>
+</body>
+</html>

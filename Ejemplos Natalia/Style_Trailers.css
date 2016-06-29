@@ -1,0 +1,17 @@
+body{
+  color: #333;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  line-height: 1.6;
+}
+header {
+  background: whitesmoke;
+  border-bottom: 1px;
+  border-color: #ddd;
+}
+
+div {
+  background: whitesmoke;
+  display: inline-block;
+  width: 100px;
+}

@@ -1,0 +1,44 @@
+body {
+  background: #edeff0;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.intern {
+  background: white;
+  margin: 5px;
+  margin-left: 413px;
+  padding: 20px;
+  width: 700px;
+}
+
+h1 {
+  color: #384047;
+  font-size: 28px;
+}
+
+p {
+  color: #b2bac2;
+}
+
+.bb {
+  background-color: #3f8abf;
+  border-color: #326e99;
+  margin-top: 20px;
+}
+
+.gb {
+  background-color: #5fcf80;
+  border-color: #3ac162;
+  margin-top: 20px;
+}
+
+.tit {
+  margin: 1px;
+}
+
+.par {
+  margin-right: 40px;
+  margin-top: 20px;
+}

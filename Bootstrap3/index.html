@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <title>Mis Finanzas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">mis<strong>finanzas</strong></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#"><span class="glyphicon glyphicon-dashboard"></span> Resumen</a></li>
+          <li class="active"><a href="#"><span class="glyphicon glyphicon-list-alt"> Transacciones</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Salir</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class=container1>
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Buscar" aria-describedby="basic-addon2">
+          <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-search"></span>
+        </div>
+        <div class="tabla1">
+          <table class="table table-bordered">
+            <tr>
+              <td class="td1">Ingresos</td>
+              <td class="td1">Gastos</td>
+            </tr>
+          </table>
+        </div>
+        <div class="tabla2">
+          <table class="table table-bordered">
+            <tr>
+              <td class="td1">Restaurantes</td>
+              <td class="td1">Hogar</td>
+              <td class="td1">Diversión</td>
+              <td class="td1">Viajes</td>
+              <td class="td1">Carro</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div class="container3">
+          <button type="button" class="btn btn-primary"><strong>+ Nueva Transacción</strong></button>
+          <div class="dropdownfecha">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Agosto 2014
+              <span class="caret"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="container">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><h4><small>Ago</small><h3>26</h3></h4></td>
+                <td><h4><small>Gasto<span class="label label-info">Hogar</span></small><div style="margin-top: -15px;"><br>Arriendo</div></h4></td>
+                <td><h4>$900,000<div style="margin-top: -15px;"><br><small><span class="glyphicon glyphicon-edit"></span> Editar <span class="glyphicon glyphicon-trash"></span> Eliminar</small></div></h4></td>
+              </tr>
+              <tr>
+                <td><h4><small>Ago</small><h3>25</h3></h4></td>
+                <td><h4> <div><small>Gasto<span class="label label-info">Restaurante</span></small></span></div class=concepto><div style="margin-top: -15px;"><br>El Rincón de mi tierra</div></h4></td>
+                <td><h4>$1'200,000<div style="margin-top: -15px;"><br><small><span class="glyphicon glyphicon-edit"></span> Editar <span class="glyphicon glyphicon-trash"></span> Eliminar</small></div></h4></td>
+              </tr>
+             <tr>
+                <td><h4><small>Ago</small><h3>24</h3></h4></td>
+                <td><h4><small>Ingreso</small><div style="margin-top: -15px;"><br>Salario</div></h4></td>
+                <td><h4>$4'500,000<div style="margin-top: -15px;"><br><small><span class="glyphicon glyphicon-edit"></span> Editar <span class="glyphicon glyphicon-trash"></span> Eliminar</small></div></h4></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
