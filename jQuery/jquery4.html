@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="jquery4.css">
+  <style>
+  </style>
+
+
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Lista de Tareas</h1>
+
+    <input type="text" id="input" placeholder="Cual es tu tarea?">
+    <ul class="todo-list">
+
+    </ul>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script>
+    jQuery(document).ready(function() {
+
+      $("#input").keypress(function(enter) {
+
+       if(enter.which == 13) {
+          // Acciones a realizar
+          var tarea = $("#input").val();
+
+          if (tarea == "") {
+            alert("recuerde que debe ingresar una tarea");
+
+          } else {
+              var html ="<li>"+'<div class="container"><input type="checkbox" />'+'<span>'+tarea+'</span>'+'</div>'+
+                        '<div class="close_box" hidden><a href="#" class="close_link">x</a></div>'+"</li>";
+
+              $("#input").val("");
+
+              $("ul").append(html);
+
+
+
+              $('li').hover(
+                function(){
+                  $(this).css("background-color", "#D3D3D3");
+                  $(this).children(".close_box").css("display","inline-block");
+                },
+                function() {
+                  $(this).css("background-color", "white");
+                  $(this).children(".close_box").hide();
+                }
+              );
+
+
+              $(':checkbox').click(function() {
+                if ($(this).is(':checked')) {
+                    //alert('Checked');
+                  $(this).siblings().css("text-decoration" , "line-through");
+                } else {
+                    //alert('Unchecked');
+                    $(this).siblings().css("text-decoration" , "none");
+                  }
+              });
+
+              $('.close_link').click(function() {
+                $(this).parent().closest('li').remove();
+              });
+          }
+        }
+      });
+    })
+  </script>
+</body>
+</html>
+
+
